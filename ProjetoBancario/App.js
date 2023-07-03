@@ -9,9 +9,9 @@ import Desconcetar from './src/componentes/Desconectar';
 import Home from './src/componentes/Home';
 import Relatorio from './src/componentes/Relatorio';
 import Saldo from './src/componentes/Saldo';
-import Saque from './src/componentes/Saque';
+import WithdrawScreen from './src/componentes/Saque';
 import Transferencia from './src/componentes/Transferencia';
-import Rotas from './src/rotas/Index';
+
 
 const Stack = createNativeStackNavigator();
 

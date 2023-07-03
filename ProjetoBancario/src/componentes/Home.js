@@ -34,7 +34,7 @@ function Home()  {
              </TouchableOpacity>
 
              <TouchableOpacity style={estilos.containerBotao}
-               onPress={()=> navigation.navigate('Saque')} >
+               onPress={()=> navigation.navigate('WithdrawScreen')} >
                <Text style={estilos.botaoOperacao}> Saque</Text>
              </TouchableOpacity>
 

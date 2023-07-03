@@ -16,7 +16,7 @@ export default function Login(){
     const [password, setPassword] = useState('');
   
     const handleLogin = () => {
-      if (nConta === 'dennis' && password === '22' || nConta === 'wesley' && password === '20') {
+      if (nConta === '20222018143' && password === 'dennis' || nConta === '20222017941' && password === 'wesley') {
           // Autenticação bem-sucedida, redirecionar para a tela principal
           const loginData = { nConta, password };
           navigation.navigate('Home', { loginData });
