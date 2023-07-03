@@ -11,6 +11,7 @@ import Relatorio from './src/componentes/Relatorio';
 import Saldo from './src/componentes/Saldo';
 import Saque from './src/componentes/Saque';
 import Transferencia from './src/componentes/Transferencia';
+import Rotas from './src/rotas/Index';
 
 const Stack = createNativeStackNavigator();
 
@@ -21,7 +22,9 @@ function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Welcome" component={Welcome}></Stack.Screen>
+      
+      <Stack.Screen name="Welcome" component={Welcome}></Stack.Screen>
+    
         <Stack.Screen name="Login" component={Login} />
         <Stack.Screen name="Home" component={Home} />
         <Stack.Screen name="Saldo">
@@ -56,45 +59,7 @@ export default App;
 
 
 
-
 /*
-import React, { Component } from "react";
-import { NavigationContainer } from '@react-navigation/native';
-import { View, Text, StyleSheet, ImageBackground ,Image, TextInput, TouchableOpacity} from "react-native";
-import { StatusBar } from "react-native";
-
-
-/*
-export default class App extends Component{
-  render(){
-    return(
-      
-      <View style={estilos.container}>
-        <Text style={estilos.telaInicial}>Sistema Conta bancaria</Text>
-        <Text style={estilos.telaInicial}>Desenvolvido por wesley e Dennis</Text>
-        <Text style={estilos.telaInicial}>Cefet_mg</Text>
-        <Image source={require('./issets/imagem/logotipo.png')}
-        style={estilos.logotipo}/>
-
-        <TextInput style={estilos.dadosLogin}placeholder="Digite nome "/>
-        <TextInput  style={estilos.dadosLogin}placeholder="Digite senha "
-        secureTextEntry={true}/>
-
-        <TouchableOpacity style={estilos.botaoInicial}>
-          <Text style={estilos.botaoEntrar}>Entrar</Text>
-        </TouchableOpacity>
-      
-
-
-
-      </View>
-    )
-  }
-} 
-
-
-
-
 
 const estilos = StyleSheet.create({
   container: {
