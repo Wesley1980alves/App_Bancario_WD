@@ -48,6 +48,7 @@ titulo:{
   fontSize: 30,
   fontWeight: 'bold',
   marginBottom: 24,
+  color:'#000',
 },
 container2:{
  
@@ -62,6 +63,7 @@ container2:{
   fontSize: 16,
   fontWeight: 'bold',
   marginBottom: 24,
+  color:'#000',
 },
 botao:{
   alignItems:"center",
@@ -73,7 +75,7 @@ botao:{
   fontSize:12,
 
   fontSize: 24,
-  marginBottom: 20,
+  marginBottom: 18,
   backgroundColor:'#fff',
   
 

@@ -14,9 +14,9 @@ const Transferencia = ({ balance, setBalance, balance2, setBalance2 }) => {
 
   const handleTransfer = () => {
     const amount = parseFloat(transferAmount);
-    const isValidAccount = transferToAccount === '202220'; 
+    const isValidAccount = transferToAccount === '20222018143'; 
 
-    const isSameAccount = transferToAccount === '202220'; 
+    const isSameAccount = transferToAccount === '20222017941'; 
 
     if (!amount || isNaN(amount) || amount <= 0) {
       alert('Digite um valor de transferência válido.');
@@ -61,14 +61,22 @@ const Transferencia = ({ balance, setBalance, balance2, setBalance2 }) => {
         placeholder="Valor tranferindo "
         value={transferAmount}
         onChangeText={setTransferAmount}
+
       />
+
+      <View>
+          <Text style={estilo.conta}>wesley: conta: 20222017941</Text>
+          <Text style={estilo.conta}>Dennis: conta: 20222018143</Text>
+      </View>
       <TouchableOpacity style={estilo.Botao} onPress={handleTransfer}>
         <Text style={estilo.botaoTexto}>Realizar Transferência</Text>
       </TouchableOpacity>
       <TouchableOpacity style={estilo.Botao} onPress={handleGoBack}>
         <Text style={estilo.botaoTexto}>Voltar</Text>
       </TouchableOpacity>
+      
     </View>
+    
   );
 };
 
@@ -123,5 +131,9 @@ const estilo = StyleSheet.create({
     color:'#000',
     fontSize:25
 
+  },
+  conta:{
+    fontSize:20,
+    fontWeight:'bold',
   }
 });

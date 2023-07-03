@@ -11,14 +11,14 @@ import { useNavigation } from "@react-navigation/native";
 export default function Welcome(){
     const navigation = useNavigation(); 
     return(
-      <ImageBackground   source={require('../../../issets/imagem/img.png')}
+      <ImageBackground   source={require('../../../issets/imagem/logotipo.png')}
 
       style={estilos.container}>
 
         <View  style={estilos.container2}>
-            <Text style={estilos.textoTelaLogin1}>Sistema Conta bancaria</Text>
-            <Text style={estilos.textoTelaLogin2}>Desenvolvido por wesley e Dennis</Text>
-            <Text style={estilos.textoTelaLogin3}>Cefet_mg</Text>
+            <Text style={estilos.textoTelaLogin1}>Trabalho React_native</Text>
+            <Text style={estilos.textoTelaLogin2}>Desenvolvido: wesley e Dennis </Text>
+            <Text style={estilos.textoTelaLogin3}>Cefet_mg - 2023</Text>
             
 
 
@@ -36,19 +36,11 @@ export default function Welcome(){
 const estilos = StyleSheet.create({
     container: {
       flex:1,
-    
-
-    
-
   
     },
     container2:{
       flex:2,
       marginTop:15,
-      
-
-      
-
     },
   
 
@@ -59,10 +51,7 @@ const estilos = StyleSheet.create({
     
     height:300,
     borderRadius:25,
-    
-    
-    
-    
+   
   },
 
   dadosLogin:{
@@ -80,18 +69,18 @@ const estilos = StyleSheet.create({
   
   textoTelaLogin1:{
     marginTop:10,
-    fontSize:25,
-    color:"#fff",
-    paddingStart:'12%',
+    fontSize:35,
+    color:"#ff0000",
+    paddingStart:'8%',
     fontWeight:'bold',
     
     
   },
   textoTelaLogin2:{
-    marginTop:15,
+    marginTop:10,
     fontSize:20,
-    color:"#fff",
-    paddingStart:'9%',
+    color:"#ff0000",
+    paddingStart:'18%',
     fontWeight:'bold',
 
 
@@ -99,7 +88,7 @@ const estilos = StyleSheet.create({
   textoTelaLogin3:{
     marginTop:15,
     fontSize:20,
-    color:"#fff",
+    color:"#ff0000",
     paddingStart:'33%',
     fontWeight:'bold',
 
@@ -121,7 +110,7 @@ const estilos = StyleSheet.create({
   },
   botaoEntrar:{
     fontSize:40,
-    color:'#000',
+    color:'#ff0000',
     fontWeight:'bold',
     
 
